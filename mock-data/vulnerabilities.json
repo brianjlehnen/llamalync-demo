@@ -1,0 +1,50 @@
+[
+  {
+    "id": "vuln-001",
+    "title": "CVE-2024-1234: OpenSSL Remote Code Execution",
+    "cveId": "CVE-2024-1234",
+    "severity": "critical",
+    "affectedAsset": "api-server-prod-01",
+    "affectedPackage": "openssl@3.0.7",
+    "discoveredAt": "2024-04-01T00:00:00Z",
+    "slaDeadline": "2024-05-01T00:00:00Z",
+    "status": "open",
+    "assignedTo": "emp-001"
+  },
+  {
+    "id": "vuln-002",
+    "title": "CVE-2024-5678: lodash Prototype Pollution",
+    "cveId": "CVE-2024-5678",
+    "severity": "high",
+    "affectedAsset": "web-app-prod",
+    "affectedPackage": "lodash@4.17.20",
+    "discoveredAt": "2024-04-10T00:00:00Z",
+    "slaDeadline": "2024-05-10T00:00:00Z",
+    "status": "open",
+    "assignedTo": "emp-001"
+  },
+  {
+    "id": "vuln-003",
+    "title": "CVE-2023-9999: Nginx Information Disclosure",
+    "cveId": "CVE-2023-9999",
+    "severity": "medium",
+    "affectedAsset": "nginx-gateway-01",
+    "affectedPackage": "nginx@1.24.0",
+    "discoveredAt": "2024-03-15T00:00:00Z",
+    "slaDeadline": "2024-06-15T00:00:00Z",
+    "status": "in_remediation",
+    "assignedTo": "emp-004"
+  },
+  {
+    "id": "vuln-004",
+    "title": "CVE-2024-2222: Python urllib SSRF",
+    "cveId": "CVE-2024-2222",
+    "severity": "high",
+    "affectedAsset": "data-pipeline-01",
+    "affectedPackage": "python@3.10.12",
+    "discoveredAt": "2024-04-20T00:00:00Z",
+    "slaDeadline": "2024-05-20T00:00:00Z",
+    "status": "open",
+    "assignedTo": "emp-003"
+  }
+]

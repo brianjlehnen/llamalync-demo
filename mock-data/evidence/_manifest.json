@@ -1,0 +1,23 @@
+[
+  {
+    "filename": "access-review-2026-Q1.csv",
+    "mimeType": "text/csv",
+    "description": "Quarterly access review export — access grants reviewed by managers for the 2026 Q1 cycle.",
+    "targetSlot": "access-requests",
+    "addedAt": "2026-03-15T16:00:00Z"
+  },
+  {
+    "filename": "audit-cycle-2026-plan.txt",
+    "mimeType": "text/plain",
+    "description": "Calendar + pre-audit checklist for the 2026 SOC 2 Type II observation period and audit. Maintained by the compliance lead.",
+    "targetSlot": "audit-cycle-documented",
+    "addedAt": "2026-01-08T09:00:00Z"
+  },
+  {
+    "filename": "vuln-mgmt-process-runbook.txt",
+    "mimeType": "text/plain",
+    "description": "Vulnerability management runbook — alert sources, SLA targets, remediation workflow.",
+    "targetSlot": "external-alerts-reviewed",
+    "addedAt": "2026-02-20T13:30:00Z"
+  }
+]

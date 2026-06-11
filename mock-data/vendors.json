@@ -1,0 +1,35 @@
+[
+  {
+    "id": "vendor-001",
+    "name": "AWS",
+    "category": "Cloud Infrastructure",
+    "website": "https://aws.amazon.com",
+    "riskLevel": "high",
+    "hasAccessToPII": true,
+    "hasAccessToProductionData": true,
+    "securityReviewDue": "2024-12-01",
+    "notes": "Primary cloud provider. Hosts all production infrastructure."
+  },
+  {
+    "id": "vendor-002",
+    "name": "Stripe",
+    "category": "Payment Processing",
+    "website": "https://stripe.com",
+    "riskLevel": "high",
+    "hasAccessToPII": true,
+    "hasAccessToProductionData": false,
+    "securityReviewDue": "2024-09-01",
+    "notes": "Processes all customer payments. SOC 2 Type II certified."
+  },
+  {
+    "id": "vendor-003",
+    "name": "Slack",
+    "category": "Communication",
+    "website": "https://slack.com",
+    "riskLevel": "medium",
+    "hasAccessToPII": false,
+    "hasAccessToProductionData": false,
+    "securityReviewDue": "2025-01-01",
+    "notes": "Internal team communication. Business+ plan."
+  }
+]

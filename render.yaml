@@ -1,0 +1,67 @@
+# Render deploy spec — one-click deploy from a connected GitHub repo.
+# Free tier (cold-start tolerant) is fine for the SA demo prop.
+# Each `sync: false` env var must be set in the Render dashboard before first run.
+services:
+  - type: web
+    name: llamalync
+    runtime: node
+    plan: free
+    region: oregon
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: LOG_FORMAT
+        value: json
+      - key: LOG_LEVEL
+        value: info
+      # Vanta credentials — fill in via Render dashboard (Environment tab)
+      - key: VANTA_BUILD_CLIENT_ID
+        sync: false
+      - key: VANTA_BUILD_CLIENT_SECRET
+        sync: false
+      - key: VANTA_MANAGE_CLIENT_ID
+        sync: false
+      - key: VANTA_MANAGE_CLIENT_SECRET
+        sync: false
+      - key: VANTA_INTEGRATION_ID
+        sync: false
+      - key: VANTA_PERSONNEL_RESOURCE_ID
+        sync: false
+      # Computer resource IDs for the Devices / CMDB-X sync. Declare a
+      # MacosUserComputer and a WindowsUserComputer Resource in the Build
+      # Integrations app and set each id here. No Linux env var — Linux has
+      # no native base resource type and is surfaced as "unsupported source
+      # row" in the dashboard (verified Phase 0 2026-05-13).
+      - key: VANTA_MACOS_RESOURCE_ID
+        sync: false
+      - key: VANTA_WINDOWS_RESOURCE_ID
+        sync: false
+      # Required for Risk scenario writes. Usually "Default", but set to the
+      # register name shown in Vanta UI → Risk Management.
+      - key: VANTA_RISK_REGISTER
+        sync: false
+      # Tenant context surfaced in the dashboard header. VANTA_TENANT_NAME is
+      # the subdomain shown in your Vanta UI URL (e.g. brianl-demo.com).
+      # VANTA_ENV is "sandbox" or "production" — drives the ribbon color so
+      # SEs can confirm at a glance whether this deployment touches a
+      # customer tenant or a personal sandbox.
+      - key: VANTA_TENANT_NAME
+        sync: false
+      - key: VANTA_ENV
+        sync: false
+      - key: VANTA_WEBHOOK_SECRET
+        sync: false
+      # Dashboard auth — internal username (not displayed on the login page;
+      # password-only flow). Reserved for future per-user audit/display.
+      - key: LLAMALYNC_USER
+        value: sa_team
+      - key: LLAMALYNC_PASSWORD
+        sync: false
+      # Session cookie signing secret. Generate any high-entropy string;
+      # Render's "generate value" feature on the env var is fine. Required
+      # in production — startup refuses to boot without it.
+      - key: LLAMALYNC_SESSION_SECRET
+        generateValue: true

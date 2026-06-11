@@ -1,0 +1,6 @@
+employeeEmail,system,accessLevel,grantedAt,reviewedAt,reviewedBy,decision
+alice.nguyen@peoplex.example.com,AWS Console,Admin,2025-12-01,2026-03-15,maria.santos@peoplex.example.com,Keep
+bob.simpson@peoplex.example.com,GitHub Enterprise,Write,2025-08-22,2026-03-15,maria.santos@peoplex.example.com,Keep
+carol.stevens@peoplex.example.com,Vanta,Admin,2026-01-10,2026-03-15,maria.santos@peoplex.example.com,Keep
+maria.santos@peoplex.example.com,Stripe Dashboard,Owner,2024-06-15,2026-03-15,compliance.lead@peoplex.example.com,Keep
+dan.okafor@peoplex.example.com,AWS Console,Write,2023-11-20,2026-03-15,maria.santos@peoplex.example.com,Revoke (terminated)

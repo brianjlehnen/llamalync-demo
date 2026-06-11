@@ -1,0 +1,75 @@
+[
+  {
+    "id": "emp-001",
+    "firstName": "Alice",
+    "lastName": "Nguyen",
+    "email": "alice.nguyen@peoplex.example.com",
+    "title": "Senior Engineer",
+    "department": "Engineering",
+    "startDate": "2021-03-15",
+    "status": "active",
+    "isServiceAccount": false,
+    "managerId": "emp-010"
+  },
+  {
+    "id": "emp-002",
+    "firstName": "Bob",
+    "lastName": "Simpson",
+    "email": "bob.simpson@peoplex.example.com",
+    "title": "Product Manager",
+    "department": "Product",
+    "startDate": "2020-07-01",
+    "status": "active",
+    "isServiceAccount": false,
+    "managerId": "emp-010"
+  },
+  {
+    "id": "emp-003",
+    "firstName": "Carol",
+    "lastName": "Stevens",
+    "email": "carol.stevens@peoplex.example.com",
+    "title": "Security Analyst",
+    "department": "Security",
+    "startDate": "2022-01-10",
+    "status": "active",
+    "isServiceAccount": false,
+    "managerId": "emp-010"
+  },
+  {
+    "id": "emp-004",
+    "firstName": "Dan",
+    "lastName": "Okafor",
+    "email": "dan.okafor@peoplex.example.com",
+    "title": "DevOps Engineer",
+    "department": "Engineering",
+    "startDate": "2019-11-20",
+    "status": "terminated",
+    "terminationDate": "2024-01-31",
+    "isServiceAccount": false,
+    "managerId": "emp-010"
+  },
+  {
+    "id": "svc-001",
+    "firstName": "CI",
+    "lastName": "Bot",
+    "email": "ci-bot@peoplex.example.com",
+    "title": "Service Account",
+    "department": "Engineering",
+    "startDate": "2020-01-01",
+    "status": "active",
+    "isServiceAccount": true,
+    "managerId": null
+  },
+  {
+    "id": "emp-010",
+    "firstName": "Maria",
+    "lastName": "Santos",
+    "email": "maria.santos@peoplex.example.com",
+    "title": "VP Engineering",
+    "department": "Engineering",
+    "startDate": "2018-06-01",
+    "status": "active",
+    "isServiceAccount": false,
+    "managerId": null
+  }
+]

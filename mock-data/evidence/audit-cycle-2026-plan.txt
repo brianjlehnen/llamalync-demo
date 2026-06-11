@@ -1,0 +1,26 @@
+# 2026 Audit Cycle Plan
+
+## Calendar
+
+- **Q1** — Internal access review (March 15)
+- **Q2** — SOC 2 Type II observation period start (April 1)
+- **Q3** — Vendor security reviews (July 1-30)
+- **Q4** — SOC 2 Type II audit (October 1 - November 15)
+
+## Pre-audit checklist
+
+- [x] Q1 access reviews complete — see `access-review-2026-Q1.csv`
+- [x] Risk register updated through April
+- [ ] Vendor SOC 2 attestations refreshed (Q3 target)
+- [ ] Penetration test scheduled (Q3)
+- [ ] Type II observation period evidence index complete
+
+## Owner
+
+maria.santos@peoplex.example.com · VP Engineering · cycle coordinator
+
+## Notes
+
+This document is the source-of-truth audit calendar maintained in the
+internal compliance wiki. Uploaded to Vanta on a quarterly cadence so the
+auditor can see the documented cycle alongside the evidence it produces.

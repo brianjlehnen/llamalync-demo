@@ -1,0 +1,31 @@
+{
+  "name": "llamalync",
+  "version": "0.1.0",
+  "description": "LlamaLync — a Vanta middleware sync hub. Pushes personnel, device, and vulnerability data into Vanta and reads compliance status back out.",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "check:auth": "node src/scripts/checkAuth.js",
+    "sync:personnel": "node src/sync/jobs/personnelSync.js",
+    "sync:devices": "node src/sync/jobs/deviceSync.js",
+    "sync:vulns": "node src/sync/jobs/vulnSync.js",
+    "sync:risk": "node src/sync/jobs/riskSync.js",
+    "sync:evidence": "node src/sync/jobs/evidenceUpload.js",
+    "test": "node --test test/**/*.test.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "axios": "^1.7.7",
+    "bottleneck": "^2.19.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "node-cron": "^3.0.3",
+    "svix": "^1.93.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
+}

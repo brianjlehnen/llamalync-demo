@@ -1,0 +1,37 @@
+# Vulnerability Management Runbook
+
+## Alert sources monitored
+
+- AWS Security Hub (auto-ingested into the security Jira queue)
+- GitHub Dependabot alerts (per-repo, escalated weekly)
+- US-CERT advisories (RSS, reviewed weekdays)
+- Vendor security bulletins — Apple, Microsoft, Atlassian
+- Internal scanner output (nightly on the dev infrastructure)
+
+## SLA targets
+
+| Severity | Internal deadline | Auditor-facing deadline |
+|---|---|---|
+| Critical | 7 days | 30 days |
+| High | 30 days | 60 days |
+| Medium | 90 days | 90 days |
+| Low | best-effort | n/a |
+
+## Workflow
+
+1. Alert ingested or filed → Jira ticket created with severity tag.
+2. Owner assigned based on affected component.
+3. Remediation tracked in Jira until close; weekly stand-up reviews the
+   open queue.
+4. Critical and high severity items escalate to the security lead if
+   un-acked for 24 hours.
+
+## Owner
+
+carol.stevens@peoplex.example.com · Security Analyst · vulnerability queue owner
+
+## Auditor notes
+
+This runbook is the documented process the auditor reviews to verify
+that "the organization has a documented vulnerability management
+process" — the evidence requirement under SOC 2 CC7.1 and ISO A.12.6.
